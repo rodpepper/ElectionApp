@@ -14,22 +14,27 @@ class ChosenCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var visualEffectImageView: UIVisualEffectView!
     @IBOutlet weak var chosenTitleLabel: UILabel!
     
-
-   
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        chosenImageView.layer.cornerRadius = 7
-        chosenImageView.clipsToBounds = true
-        visualEffectImageView.layer.cornerRadius = 7
-        visualEffectImageView.clipsToBounds = true
-        
+    var escolhidos: Escolhidos!
     
+    required init?(coder aDecoder: NSCoder) {
+
+        super.init(coder: aDecoder)
         
+        layer.cornerRadius = 7
         
     }
     
     
+    
+    func configureCell(escolhidos: Escolhidos) {
+        self.escolhidos = escolhidos
+        
+        chosenTitleLabel.text = self.escolhidos.name.capitalizedString
+        chosenImageView.image = UIImage (named: "\(self.escolhidos.CSVID)")
+    }
+    
+    
+
 }
 
 

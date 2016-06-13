@@ -8,16 +8,50 @@
 
 import UIKit
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController{
     
-    var names = ["Adolfo", "Binho", "Casy", "Duda", "Eduardo", "Flavia", "Gustavo", "Josafah", "Klemerson", "Max", "Paulo", "Pepper", "Renan", "Sofia", "Vinicius"]
-    
-    var images = [UIImage(named: "Adolfo.png"), UIImage(named: "Binho.png"), UIImage(named: "Casy.png"), UIImage(named: "Duda.png"), UIImage(named: "Eduardo.png"), UIImage(named: "Flavia.png"), UIImage(named: "Gustavo.png"), UIImage(named: "Josafah.png"), UIImage(named: "Klemerson.png"), UIImage(named: "Max.png"), UIImage(named: "Paulo.png"), UIImage(named: "Pepper.png"), UIImage(named: "Renan.png"), UIImage(named: "Sofia.png"), UIImage(named: "Vinicius.png")]
-    
+   
+    @IBOutlet weak var collection : UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        collection.delegate = self
+        collection.dataSource = self
+    }
+    
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 15
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as? ChosenCollectionViewCell {
+            
+            let escolhidos = Escolhidos(name: "Test", CSVID: indexPath.row)
+            cell.configureCell(escolhidos)
+            return cell
+            
+        } else {
+            return UICollectionViewCell()
+        }
+        
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+//    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+//        return 1
+//    }
+    
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        return CGSizeMake(120, 130)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,23 +60,7 @@ class CollectionViewController: UICollectionViewController {
     }
 
     
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return names.count
-    }
+ 
     
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as UICollectionViewCell
-        
-        let image = cell.viewWithTag(1) as! UIImageView
-        
-        image.image = images[indexPath.row]
-        
-        let name = cell.viewWithTag(2) as! UILabel
-        
-        name.text = names[indexPath.row]
-        
-        return cell
-    }
-
 }
 

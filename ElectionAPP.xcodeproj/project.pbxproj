@@ -14,6 +14,8 @@
 		192A2CDC1D0C51C9004788DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192A2CDA1D0C51C9004788DF /* LaunchScreen.storyboard */; };
 		192A2CE71D0C51C9004788DF /* ElectionAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A2CE61D0C51C9004788DF /* ElectionAPPTests.swift */; };
 		192A2CF21D0C51CA004788DF /* ElectionAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A2CF11D0C51CA004788DF /* ElectionAPPUITests.swift */; };
+		1996841A1D0EF55700E45E4D /* escolhidos.csv in Resources */ = {isa = PBXBuildFile; fileRef = 199684191D0EF55700E45E4D /* escolhidos.csv */; };
+		1996841D1D0EF5CB00E45E4D /* Escolhidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1996841C1D0EF5CB00E45E4D /* Escolhidos.swift */; };
 		19E8EBE51D0E47A100C497DF /* ChosenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E8EBE41D0E47A100C497DF /* ChosenCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		192A2CED1D0C51C9004788DF /* ElectionAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectionAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		192A2CF11D0C51CA004788DF /* ElectionAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionAPPUITests.swift; sourceTree = "<group>"; };
 		192A2CF31D0C51CA004788DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199684191D0EF55700E45E4D /* escolhidos.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = escolhidos.csv; sourceTree = "<group>"; };
+		1996841C1D0EF5CB00E45E4D /* Escolhidos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Escolhidos.swift; sourceTree = "<group>"; };
 		19E8EBE41D0E47A100C497DF /* ChosenCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChosenCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,11 +103,13 @@
 		192A2CD01D0C51C9004788DF /* ElectionAPP */ = {
 			isa = PBXGroup;
 			children = (
+				1996841E1D0EF8B400E45E4D /* View */,
+				1996841B1D0EF5B500E45E4D /* Model */,
 				192A2CD11D0C51C9004788DF /* AppDelegate.swift */,
 				192A2CD31D0C51C9004788DF /* ViewController.swift */,
 				192A2CD51D0C51C9004788DF /* Main.storyboard */,
-				19E8EBE41D0E47A100C497DF /* ChosenCollectionViewCell.swift */,
 				192A2CD81D0C51C9004788DF /* Assets.xcassets */,
+				199684191D0EF55700E45E4D /* escolhidos.csv */,
 				192A2CDA1D0C51C9004788DF /* LaunchScreen.storyboard */,
 				192A2CDD1D0C51C9004788DF /* Info.plist */,
 			);
@@ -126,6 +132,22 @@
 				192A2CF31D0C51CA004788DF /* Info.plist */,
 			);
 			path = ElectionAPPUITests;
+			sourceTree = "<group>";
+		};
+		1996841B1D0EF5B500E45E4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1996841C1D0EF5CB00E45E4D /* Escolhidos.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1996841E1D0EF8B400E45E4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19E8EBE41D0E47A100C497DF /* ChosenCollectionViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				192A2CDC1D0C51C9004788DF /* LaunchScreen.storyboard in Resources */,
+				1996841A1D0EF55700E45E4D /* escolhidos.csv in Resources */,
 				192A2CD91D0C51C9004788DF /* Assets.xcassets in Resources */,
 				192A2CD71D0C51C9004788DF /* Main.storyboard in Resources */,
 			);
@@ -259,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1996841D1D0EF5CB00E45E4D /* Escolhidos.swift in Sources */,
 				19E8EBE51D0E47A100C497DF /* ChosenCollectionViewCell.swift in Sources */,
 				192A2CD41D0C51C9004788DF /* ViewController.swift in Sources */,
 				192A2CD21D0C51C9004788DF /* AppDelegate.swift in Sources */,
