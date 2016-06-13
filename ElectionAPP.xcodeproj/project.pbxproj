@@ -14,6 +14,7 @@
 		192A2CDC1D0C51C9004788DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192A2CDA1D0C51C9004788DF /* LaunchScreen.storyboard */; };
 		192A2CE71D0C51C9004788DF /* ElectionAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A2CE61D0C51C9004788DF /* ElectionAPPTests.swift */; };
 		192A2CF21D0C51CA004788DF /* ElectionAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A2CF11D0C51CA004788DF /* ElectionAPPUITests.swift */; };
+		19E8EBE51D0E47A100C497DF /* ChosenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E8EBE41D0E47A100C497DF /* ChosenCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		192A2CED1D0C51C9004788DF /* ElectionAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectionAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		192A2CF11D0C51CA004788DF /* ElectionAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionAPPUITests.swift; sourceTree = "<group>"; };
 		192A2CF31D0C51CA004788DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E8EBE41D0E47A100C497DF /* ChosenCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChosenCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				192A2CD11D0C51C9004788DF /* AppDelegate.swift */,
 				192A2CD31D0C51C9004788DF /* ViewController.swift */,
 				192A2CD51D0C51C9004788DF /* Main.storyboard */,
+				19E8EBE41D0E47A100C497DF /* ChosenCollectionViewCell.swift */,
 				192A2CD81D0C51C9004788DF /* Assets.xcassets */,
 				192A2CDA1D0C51C9004788DF /* LaunchScreen.storyboard */,
 				192A2CDD1D0C51C9004788DF /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E8EBE51D0E47A100C497DF /* ChosenCollectionViewCell.swift in Sources */,
 				192A2CD41D0C51C9004788DF /* ViewController.swift in Sources */,
 				192A2CD21D0C51C9004788DF /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +486,7 @@
 				192A2CF81D0C51CA004788DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		192A2CF91D0C51CA004788DF /* Build configuration list for PBXNativeTarget "ElectionAPPTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				192A2CFB1D0C51CA004788DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		192A2CFC1D0C51CA004788DF /* Build configuration list for PBXNativeTarget "ElectionAPPUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				192A2CFE1D0C51CA004788DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
